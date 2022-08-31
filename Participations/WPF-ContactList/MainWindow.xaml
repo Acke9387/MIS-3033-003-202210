@@ -6,5 +6,25 @@
         xmlns:local="clr-namespace:WPF_ContactList"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4E9BE2" Offset="0.472"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF0A9438" Offset="0.763"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ListBox x:Name="lstContacts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,308,0,0"/>
+            <Label Content="Id:" HorizontalAlignment="Left" Margin="39,98,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
+            <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="98,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <Label Content="Email:" HorizontalAlignment="Left" Margin="39,141,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
+            <TextBox x:Name="txtId_Copy" HorizontalAlignment="Left" Margin="98,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <Label Content="Firstname:" HorizontalAlignment="Left" Margin="259,98,0,0" VerticalAlignment="Top" Width="72" Background="#7FF5F1F1"/>
+            <TextBox x:Name="txtId_Copy1" HorizontalAlignment="Left" Margin="373,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <Label Content="Lastname:" HorizontalAlignment="Left" Margin="259,141,0,0" VerticalAlignment="Top" Width="72" Background="#7FF5F1F1"/>
+            <TextBox x:Name="txtId_Copy2" HorizontalAlignment="Left" Margin="373,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <Label Content="Photo:" HorizontalAlignment="Left" Margin="621,68,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
+            <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="165" Margin="555,98,0,0" VerticalAlignment="Top" Width="232"/>
+
+        </Grid>
 </Window>
