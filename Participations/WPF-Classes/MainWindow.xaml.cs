@@ -25,26 +25,47 @@ namespace WPF_Classes
         public MainWindow()
         {
             InitializeComponent();
-
-
-            Toy myToy = new Toy();
-            myToy.Manufacturer = "Hasbro";
-            myToy.Name = "Buzz";
-            //...
-
-            var uri = new Uri("https://images-na.ssl-images-amazon.com/images/I/71rL5zB1UZL.__AC_SX300_SY300_QL70_FMwebp_.jpg");
-            var img = new BitmapImage(uri);
-
-            imgPicture.Source = img;
-
-            lstToys.Items.Add(myToy);
         }
 
         private void lstToys_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Toy selectedToy = (Toy)lstToys.SelectedItem;
 
-            MessageBox.Show($"{selectedToy.Name}");
+            if (selectedToy is null)
+            {
+                return;
+            }
+
+            imgToyPicture.Source = new BitmapImage(new Uri(selectedToy.Image));
+            MessageBox.Show($"{selectedToy.GetAisle()}");
+
+        }
+
+        private void btnSaveToy_Click(object sender, RoutedEventArgs e)
+        {
+            string manufacturer = txtManufacturer.Text;
+
+            Toy t = new Toy();
+            t.Manufacturer = manufacturer;
+            double p = 0;
+
+            if (double.TryParse(txtPrice.Text, out p) == false)
+            {
+                MessageBox.Show("Please input a valid price.");
+                txtPrice.Text = String.Empty;
+                return;
+            }
+
+            t.Price = p;
+            t.Name = txtName.Text;
+            t.Image = txtImage.Text;
+
+
+            lstToys.Items.Add(t);
+            txtPrice.Clear();
+            txtName.Clear();
+            txtManufacturer.Clear();
+            txtImage.Clear();
         }
     }
 }

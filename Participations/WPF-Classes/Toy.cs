@@ -34,7 +34,7 @@ namespace WPF_Classes
 
             // figureout the aisle with Manufacturer
 
-            output = Manufacturer;
+            output = Manufacturer.ToUpper()[0] + "" + Price.ToString().Replace(".","").Replace(",","");
 
             return output;
         }
