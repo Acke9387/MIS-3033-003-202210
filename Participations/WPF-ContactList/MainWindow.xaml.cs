@@ -32,5 +32,14 @@ namespace WPF_ContactList
 
             }
         }
+
+        private void btnShow_Click(object sender, RoutedEventArgs e)
+        {
+            Contact selectedContact = (Contact)lstContacts.SelectedItem;
+
+
+            txtId.Text = selectedContact.Id;
+            //...
+        }
     }
 }

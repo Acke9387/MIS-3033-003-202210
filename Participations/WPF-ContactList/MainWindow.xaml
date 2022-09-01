@@ -25,6 +25,7 @@
             <TextBox x:Name="txtId_Copy2" HorizontalAlignment="Left" Margin="373,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
             <Label Content="Photo:" HorizontalAlignment="Left" Margin="621,68,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
             <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="165" Margin="555,98,0,0" VerticalAlignment="Top" Width="232"/>
+        <Button x:Name="btnShow" Content="Show Data" HorizontalAlignment="Left" Margin="311,231,0,0" VerticalAlignment="Top" Height="47" Width="89" Click="btnShow_Click"/>
 
-        </Grid>
+    </Grid>
 </Window>
