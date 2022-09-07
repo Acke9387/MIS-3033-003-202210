@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-Classes", "WPF-Classes\WPF-Classes.csproj", "{5482292D-DB00-47FD-8261-55D6B448F5A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-ContactList", "WPF-ContactList\WPF-ContactList.csproj", "{40E9C46D-F8D6-4F74-8E96-18C5160C311F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-ContactList", "WPF-ContactList\WPF-ContactList.csproj", "{40E9C46D-F8D6-4F74-8E96-18C5160C311F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-VowelsAndConsonants", "WPF-VowelsAndConsonants\WPF-VowelsAndConsonants.csproj", "{0EF84DF7-8DBE-4E91-ADC6-F5BE40A79E52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{40E9C46D-F8D6-4F74-8E96-18C5160C311F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40E9C46D-F8D6-4F74-8E96-18C5160C311F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E9C46D-F8D6-4F74-8E96-18C5160C311F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF84DF7-8DBE-4E91-ADC6-F5BE40A79E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF84DF7-8DBE-4E91-ADC6-F5BE40A79E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF84DF7-8DBE-4E91-ADC6-F5BE40A79E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF84DF7-8DBE-4E91-ADC6-F5BE40A79E52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
