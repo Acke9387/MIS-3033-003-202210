@@ -29,17 +29,52 @@ namespace WPF_ContactList
 
             for (int i = 1; i < fileContents.Length; i++)
             {
+                string[] pieces = fileContents[i].Split("|");
+                //Id|FirstName|LastName|Email|Photo
+                Contact c = new Contact()
+                {
+                    Id = Convert.ToInt32(pieces[0]),
+                    FirstName = pieces[1],
+                    LastName = pieces[2],
+                    Email = pieces[3],
+                    Photo = pieces[4]
+                };
+                //c.Id = Convert.ToInt32(pieces[0]);
+                //c.FirstName = pieces[1];
 
+                lstContacts.Items.Add(c);
             }
+
         }
 
         private void btnShow_Click(object sender, RoutedEventArgs e)
         {
-            Contact selectedContact = (Contact)lstContacts.SelectedItem;
+            Contact selected = (Contact)lstContacts.SelectedItem;
+            //Contact selected = new Contact()
+            //{
+            //    Id = 1,
+            //    FirstName = "john",
+            //    LastName = "Smith",
+            //    Email = "John@smith.com",
+            //    Photo = ""
+            //};
 
+            if (selected is null)
+            {
+                return;
+            }
 
-            txtId.Text = selectedContact.Id;
+            txtId.Text = selected.Id.ToString("N0");
+            txtFirstname.Text = selected.FirstName;
+            txtLastname.Text = selected.LastName;
+            txtEmail.Text = selected.Email;
+            imgPicture.Source = new BitmapImage(new Uri(selected.Photo));
             //...
+        }
+
+        private void lstContacts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            btnShow.IsEnabled = true;
         }
     }
 }

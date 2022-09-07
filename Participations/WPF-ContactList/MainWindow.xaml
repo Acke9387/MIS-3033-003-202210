@@ -14,18 +14,18 @@
                     <GradientStop Color="#FF0A9438" Offset="0.763"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <ListBox x:Name="lstContacts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,308,0,0"/>
+            <ListBox x:Name="lstContacts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,308,0,0" SelectionChanged="lstContacts_SelectionChanged"/>
             <Label Content="Id:" HorizontalAlignment="Left" Margin="39,98,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
             <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="98,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
             <Label Content="Email:" HorizontalAlignment="Left" Margin="39,141,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
-            <TextBox x:Name="txtId_Copy" HorizontalAlignment="Left" Margin="98,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="98,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
             <Label Content="Firstname:" HorizontalAlignment="Left" Margin="259,98,0,0" VerticalAlignment="Top" Width="72" Background="#7FF5F1F1"/>
-            <TextBox x:Name="txtId_Copy1" HorizontalAlignment="Left" Margin="373,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <TextBox x:Name="txtFirstname" HorizontalAlignment="Left" Margin="373,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
             <Label Content="Lastname:" HorizontalAlignment="Left" Margin="259,141,0,0" VerticalAlignment="Top" Width="72" Background="#7FF5F1F1"/>
-            <TextBox x:Name="txtId_Copy2" HorizontalAlignment="Left" Margin="373,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
+            <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Margin="373,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#72FFFFFF" IsEnabled="False"/>
             <Label Content="Photo:" HorizontalAlignment="Left" Margin="621,68,0,0" VerticalAlignment="Top" Width="54" Background="#7FF5F1F1"/>
             <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="165" Margin="555,98,0,0" VerticalAlignment="Top" Width="232"/>
-        <Button x:Name="btnShow" Content="Show Data" HorizontalAlignment="Left" Margin="311,231,0,0" VerticalAlignment="Top" Height="47" Width="89" Click="btnShow_Click"/>
+        <Button x:Name="btnShow" Content="Show Data" HorizontalAlignment="Left" Margin="311,231,0,0" VerticalAlignment="Top" Height="47" Width="89" Click="btnShow_Click" IsEnabled="False"/>
 
     </Grid>
 </Window>

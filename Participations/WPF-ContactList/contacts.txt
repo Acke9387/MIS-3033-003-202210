@@ -1,7 +1,7 @@
 Id|FirstName|LastName|Email|Photo
 1|Kerwinn|Moriarty|kmoriarty0@state.gov|https://kelicommheadshots.com/wp-content/uploads/2019/02/Jen-for-Social-Media-2-256x256.jpg
 2|Archaimbaud|Twelvetree|atwelvetree1@delicious.com|https://kelicommheadshots.com/wp-content/uploads/2014/04/KeliComm-Golden-Mean-256x256.png
-3|Northrup|Antoniewicz|nantoniewicz2@google.nl|"https://styles.redditmedia.com/t5_4fyq8y/styles/profileIcon_wo5wm1ngbvf71.jpg?width=256&height=256&crop=256:256|smart&s=129ba943b838c9801913e9692c96d7820949a310"
+3|Northrup|Antoniewicz|nantoniewicz2@google.nl|https://styles.redditmedia.com/t5_4fyq8y/styles/profileIcon_wo5wm1ngbvf71.jpg?width=256&height=256&crop=256:256
 4|Vivyan|Giorgione|vgiorgione3@economist.com|https://i.pinimg.com/originals/c3/b3/e6/c3b3e649b6957b077b7aad3cd6f58708.jpg
 5|Consuela|Tine|ctine4@phoca.cz|https://www.answers4dancers.com/images/photos/1012/667/thumb_1d4441f82ccbeed41893533c.jpg
 6|Kingsley|Anton|kanton5@ucla.edu|https://kelicommheadshots.com/wp-content/uploads/2014/11/Steve-KeliComm-Professional-Headshot-256x256.jpg
