@@ -24,5 +24,34 @@ namespace WPF_VowelsAndConsonants
         {
             InitializeComponent();
         }
+
+        private void btnSplit_Click(object sender, RoutedEventArgs e)
+        {
+            lstVowels.Items.Clear();
+            lstConsonants.Items.Clear();
+
+            string word = txtInput.Text.Replace(",", "");
+
+            foreach (char letter in word)
+            {
+                if (char.IsLetter(letter) == false)
+                {
+                    continue;
+                }
+
+                if (char.ToLower(letter) == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+                {
+                    lstVowels.Items.Add(letter);
+                }
+                else
+                {
+                    lstConsonants.Items.Add(letter);
+                }
+
+            }
+
+            txtInput.Clear();
+
+        }
     }
 }

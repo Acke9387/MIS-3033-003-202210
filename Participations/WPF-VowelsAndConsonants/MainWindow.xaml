@@ -10,8 +10,8 @@
     <ImageBrush ImageSource="https://images.unsplash.com/photo-1581544291234-31340be4b1b8?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGV0dGVyc3xlbnwwfHwwfHw%3D"/>
     </Window.Background>
     <Grid>
-        <ListBox x:Name="lstConsonants" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,128,0,0" HorizontalAlignment="Right" Width="400" Background="#BFFFFFFF"/>
-        <ListBox x:Name="lstVowels" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,128,0,0" HorizontalAlignment="Left" Width="400" Background="#BFFFFFFF"/>
+        <ListBox x:Name="lstConsonants" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,128,0,0" HorizontalAlignment="Right" Width="385" Background="#BFFFFFFF"/>
+        <ListBox x:Name="lstVowels" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,128,0,0" HorizontalAlignment="Left" Width="388" Background="#BFFFFFFF"/>
         <Label Content="Vowels" HorizontalAlignment="Left" Margin="143,100,0,0" VerticalAlignment="Top" Background="#CC423EBD" Width="63" Foreground="#FFF5EFEF"/>
         <Label Content="Consonants" HorizontalAlignment="Left" Margin="568,100,0,0" VerticalAlignment="Top" Background="#CC423EBD" Width="85" Foreground="#FFF5EFEF"/>
         <Rectangle Stroke="Black" Margin="200,10,190,0" Fill="#54FBF7F7" Height="85" VerticalAlignment="Top"/>
