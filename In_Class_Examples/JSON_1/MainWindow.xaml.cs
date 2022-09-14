@@ -23,20 +23,23 @@ namespace JSON_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Person> peeps = new List<Person>();
         public MainWindow()
         {
             InitializeComponent();
 
             string dataAsJson = File.ReadAllText("MOCK_DATA.json");
 
-            List<Person> peeps = new List<Person>();
             peeps = JsonConvert.DeserializeObject<List<Person>>(dataAsJson);
 
-
+            lstPeople.Items.Contains(new Person() { });
 
             foreach (Person person in peeps)
             {
-                lstPeople.Items.Add(person);
+                if (person.FirstName.ToLower()[0] == 'a')
+                {
+                    lstPeople.Items.Add(person);
+                }
             }
 
 
@@ -45,7 +48,11 @@ namespace JSON_1
 
         private void btnGo_Click(object sender, RoutedEventArgs e)
         {
+            string serializedData = JsonConvert.SerializeObject(lstPeople.Items, Formatting.Indented);
 
+            File.WriteAllText("all_people_starting_with_a.json", serializedData);
+
+            MessageBox.Show("Saved successfully");
         }
     }
 }
