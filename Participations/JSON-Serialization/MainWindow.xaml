@@ -1,0 +1,23 @@
+﻿<Window x:Class="JSON_Serialization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSON_Serialization"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/most-popular-video-games-of-2022-1642612227.png"/>
+    </Window.Background>
+    <Grid>
+        <GroupBox Header="Select a platform" Margin="493,10,43,335" Foreground="Black" FontWeight="Bold" BorderBrush="#FF844C25" Background="#E5E64C4C" FontSize="14">
+            <ComboBox x:Name="cboPlatforms" HorizontalAlignment="Left" Margin="25,0,0,0" Width="198" Height="28" SelectionChanged="cboPlatforms_SelectionChanged" />
+        </GroupBox>
+        <ListBox x:Name="lstGames" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,197,0,0" Background="#BFFFFFFF" MouseDoubleClick="lstGames_MouseDoubleClick"/>
+        <Button x:Name="btnSave" Content="Save Data" HorizontalAlignment="Left" Margin="127,85,0,0" VerticalAlignment="Top" Height="107" Width="170" Foreground="#FFD21F1F" FontWeight="Bold" FontSize="14" Click="btnSave_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="https://mpng.subpng.com/20190820/wqx/transparent-floppy-disk-line-rectangle-clip-art-5d6726fb366e78.987590621567041275223.jpg"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

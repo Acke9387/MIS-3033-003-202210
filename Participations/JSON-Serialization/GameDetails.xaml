@@ -1,0 +1,23 @@
+﻿<Window x:Class="JSON_Serialization.GameDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSON_Serialization"
+        mc:Ignorable="d"
+       Title="GameDetails" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblTitle" Content="Label" HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" Height="101" Width="554" FontSize="36"/>
+        <Label Content="Platform" HorizontalAlignment="Left" Margin="68,132,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPlatform" HorizontalAlignment="Left" Margin="150,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Release Date" HorizontalAlignment="Left" Margin="68,168,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtReleaseDate" HorizontalAlignment="Left" Margin="150,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Summary" HorizontalAlignment="Left" Margin="68,309,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSummary" HorizontalAlignment="Left" Margin="150,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" IsEnabled="False" Height="93"/>
+        <Label Content="MetaScore" HorizontalAlignment="Left" Margin="68,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMetaScore" HorizontalAlignment="Left" Margin="150,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="User Review" HorizontalAlignment="Left" Margin="68,237,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUserReview" HorizontalAlignment="Left" Margin="150,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+
+    </Grid>
+</Window>
