@@ -69,6 +69,11 @@ namespace WPF_JSONFromAFile
                 }
             }
 
+            Details deets = new Details();
+            deets.c = (Car) lstCars.Items[0];
+            deets.ShowData();
+            deets.Show();
+
             lblResults.Content = $"There are {lstCars.Items.Count.ToString("N0")} {selectedColor} cars";
         }
     }
