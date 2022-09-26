@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-VowelsAndConsonants", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-JSONFromAFile", "WPF-JSONFromAFile\WPF-JSONFromAFile.csproj", "{AC9FED68-E20D-403D-AF32-EDBA27BEDF4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-Serialization", "JSON-Serialization\JSON-Serialization.csproj", "{343D0F0E-7C56-4BCE-9EA1-9E34B01DDF42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON-Serialization", "JSON-Serialization\JSON-Serialization.csproj", "{343D0F0E-7C56-4BCE-9EA1-9E34B01DDF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-Pokemon", "JSON-Pokemon\JSON-Pokemon.csproj", "{13FFD020-B680-489B-BC3B-502EFA81A49E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{343D0F0E-7C56-4BCE-9EA1-9E34B01DDF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343D0F0E-7C56-4BCE-9EA1-9E34B01DDF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343D0F0E-7C56-4BCE-9EA1-9E34B01DDF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13FFD020-B680-489B-BC3B-502EFA81A49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13FFD020-B680-489B-BC3B-502EFA81A49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13FFD020-B680-489B-BC3B-502EFA81A49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13FFD020-B680-489B-BC3B-502EFA81A49E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
