@@ -16,19 +16,20 @@
             </Label.Background>
         </Label>
         <GroupBox Header="Pokemon Details" Margin="410,99,10,10" Background="#76FF0000" Foreground="#FFDEED50" FontWeight="Bold" FontSize="14"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,84,500,0" Background="#7FFFFFFF"/>
+        <ListBox x:Name="lstPokemon" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,84,500,0" Background="#7FFFFFFF"/>
         <Image x:Name="img" HorizontalAlignment="Left" Height="115"  VerticalAlignment="Top" Width="134" Margin="650,118,0,0"/>
         <Label Content="Height:" HorizontalAlignment="Left" Margin="439,236,0,0" VerticalAlignment="Top" Width="55" Foreground="#FFF7F4F4"/>
         <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="499,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Foreground="#FC000000" Background="#C9FFFFFF" IsEnabled="False"/>
         <Label Content="Weight:" HorizontalAlignment="Left" Margin="439,273,0,0" VerticalAlignment="Top" Width="55" Foreground="#FFF7F4F4"/>
-        <TextBox x:Name="txtHeight_Copy" HorizontalAlignment="Left" Margin="499,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Foreground="#FC000000" Background="#C9FFFFFF" IsEnabled="False"/>
+        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Margin="499,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Foreground="#FC000000" Background="#C9FFFFFF" IsEnabled="False"/>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="439,154,0,0" VerticalAlignment="Top" Width="55" Foreground="#FFF7F4F4"/>
-        <TextBox x:Name="txtHeight_Copy1" HorizontalAlignment="Left" Margin="499,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Foreground="#FC000000" Background="#C9FFFFFF" Height="40" IsEnabled="False"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="316,180,0,0" VerticalAlignment="Top" Height="79" Width="80">
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="499,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Foreground="#FC000000" Background="#C9FFFFFF" Height="40" IsEnabled="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="316,180,0,0" VerticalAlignment="Top" Height="79" Width="80" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSgyWBZ7ymFO__ev3OKdxeulXqhrZ22LIjQ&amp;usqp=CAU"/>
             </Button.Background>
         </Button>
+        <Button x:Name="btnFlip" Content="Flip" HorizontalAlignment="Left" Margin="666,286,0,0" VerticalAlignment="Top" Height="38" Width="81" Click="btnFlip_Click"/>
 
 
 
