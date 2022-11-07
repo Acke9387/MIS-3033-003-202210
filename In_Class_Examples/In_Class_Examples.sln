@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON_1", "JSON_1\JSON_1.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON_RickAndMorty", "JSON_RickAndMorty\JSON_RickAndMorty.csproj", "{E79101A0-1CFC-4921-9BF2-1B99A01A4951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database_Example", "Database_Example\Database_Example.csproj", "{8CA84009-109B-4688-A439-C0D7C48861EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database_Example", "Database_Example\Database_Example.csproj", "{8CA84009-109B-4688-A439-C0D7C48861EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMVCApplication", "MyFirstMVCApplication\MyFirstMVCApplication.csproj", "{CA696D2C-2083-40C7-91F1-99385060E463}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8CA84009-109B-4688-A439-C0D7C48861EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CA84009-109B-4688-A439-C0D7C48861EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CA84009-109B-4688-A439-C0D7C48861EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA696D2C-2083-40C7-91F1-99385060E463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA696D2C-2083-40C7-91F1-99385060E463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA696D2C-2083-40C7-91F1-99385060E463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA696D2C-2083-40C7-91F1-99385060E463}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
